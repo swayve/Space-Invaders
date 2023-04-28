@@ -21,12 +21,3 @@ class SpaceShooter(Turtle):
         self.goto(new_x, -320)
     
 
-    def shoot(self):
-        MOVE = 10
-        bullet = Turtle(shape="circle")
-        bullet.color("red")
-        bullet.penup()
-        bullet.forward(MOVE)
-        if random.randint(1, 10) == 1:
-            bullet.setpos(self.pos())
-
