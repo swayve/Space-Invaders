@@ -1,5 +1,6 @@
 from turtle import Screen, Turtle
 from player import SpaceShooter
+from bullet import Shooter
 import time
 
 screen = Screen()
@@ -9,7 +10,7 @@ screen.tracer(0)
 
 
 player = SpaceShooter()
-
+shooter = Shooter()
 
 
 
@@ -24,7 +25,7 @@ screen.onkey(player.right, "Right")
 game_is_on = True
 while game_is_on:
     screen.update()
-    player.shoot()
+
 
 
 

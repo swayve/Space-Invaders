@@ -26,7 +26,7 @@ class SpaceShooter(Turtle):
         bullet = Turtle(shape="circle")
         bullet.color("red")
         bullet.penup()
-        bullet.setpos(0, 0)
-        shot = random.randint(1, 4)
-        if shot == 1:
-            bullet.forward(MOVE)
+        bullet.forward(MOVE)
+        if random.randint(1, 10) == 1:
+            bullet.setpos(self.pos())
+
